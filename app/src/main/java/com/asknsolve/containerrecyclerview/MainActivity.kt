@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         for(no in 1..100){
             val title = "이것이 안드로이드다 ${no}"
             val date = System.currentTimeMillis()
+            var memo = Memo(no, title, date)
+            data.add(memo)
         }
         return data
     }
